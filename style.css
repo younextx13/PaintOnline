@@ -5,3 +5,15 @@ canvas {
     display: block;
     margin: 0 auto;
 }
+
+.btn{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.btn:active {
+	background-color: #2f599e !important;
+}
