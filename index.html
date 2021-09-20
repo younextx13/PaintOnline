@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <canvas id="canvas">Your browser is not supported. U mad bro.</canvas>
-    <script type="text/javascript" src="main.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>PaintOnline</title>
+        <link rel="stylesheet" href="style.css" />
 
-</body>
+    </head>
+    <body>
+        <canvas id=canvas width="700" height="700"></canvas>
+        <script type="text/javascript" src="main.js"></script>
+
+        <div class="width-line">
+            <input type="range" id="range_line" min="1" max="70" step="1" oninput="document.getElementById('input_width_line').value = this.value; width_line = this.value">
+            <input type="number" id="input_width_line" oninput="width_line = this.value">
+            <label for="range_line">Width line</label>
+        </div>
+        
+
+
+    </body>
 </html>
