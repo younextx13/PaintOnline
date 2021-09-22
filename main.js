@@ -29,3 +29,14 @@ canv.addEventListener("mousemove", function (e) {
     ctx.moveTo(e.clientX - rect.left, e.clientY - rect.top);
   }
 });
+
+$('body').on('input', '.input-range', function(){
+	var value = this.value.replace(/[^0-9]/g, ''); //Regular expressions
+	if (value < $(this).data('min')) {
+		this.value = $(this).data('min');
+	} else if (value > $(this).data('max')) {
+		this.value = $(this).data('max');
+	} else {
+		this.value = value;
+	}
+});
